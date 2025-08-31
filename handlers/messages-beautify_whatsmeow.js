@@ -1,7 +1,7 @@
 const { requestToGolangEngine, transformKeysFromCapitalizeToStandartObject } = require('../utils/utils');
 const { getNama } = require('../command/profile/functions');
 
-function formatWhatsmeowMessage(apiKey, _userDb, body, messageRaw, botInfo) {
+function formatWhatsmeowMessage(apiKey, _userDb, _groupDb, body, messageRaw, botInfo) {
     if (!body || !body.Info || !body.Message) {
         return {};
     }
